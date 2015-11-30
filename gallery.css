@@ -1,0 +1,14 @@
+// Picture gallery css
+        .gallery {         
+          padding:0 0 0 0;
+          margin:0 0 0 0;
+      }
+      .gallery li {     
+          list-style:none;
+          margin-bottom:25px;           
+      }
+      .gallery li img {
+          cursor: pointer;
+          height: 160px;
+          width: 200px;
+      }

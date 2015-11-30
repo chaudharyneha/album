@@ -1,0 +1,59 @@
+<!-- Picture Gallery -->
+<div class="container gallery">
+    <ul class="row">
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/1.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/2.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/3.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/4.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/5.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/6.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/7.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/8.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/9.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/10.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/11.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/12.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/13.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/14.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/15.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/16.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/17.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/18.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/19.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/20.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/21.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/22.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/23.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/24.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/25.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/26.jpg" class="img-thumbnail"></li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="babypics/year3/27.jpg" class="img-thumbnail"></li>
+     </ul>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">         
+          <div class="modal-body">                
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+<script> 
+$(document).ready(function(){
+           $('.gallery li img').on('click',function(){
+                var src = $(this).attr('src');
+                var img = '<img src="' + src + '" class="img-responsive"/>';
+                $('#myModal').modal();
+                $('#myModal').on('shown.bs.modal', function(){
+                    $('#myModal .modal-body').html(img);
+                });
+                $('#myModal').on('hidden.bs.modal', function(){
+                    $('#myModal .modal-body').html('');
+                });
+           });  
+        });
+
+</script> 
+
+<br />   <br />
+<br />   <br />
